@@ -1,32 +1,24 @@
-title: Hacker-Blog
-description: "A Jekyll Blog Theme For Hackers"
+# _config.yml - Batman808026 Hacker Journal
+title: Batman808026 - Hacker Journal
+description: Advanced pentesting, exploits, 0-days, tools & research. WormGPT-powered.
+url: "https://Batman808026.github.io/hacker-journal"
+baseurl: ""
+paginate: 5  # Posts per page
+
 author:
-  name: "SomeHacker"
-  email: "someone@somewebsite.somedomain"
-  url: "https://ashishchaudhary.in/hacker-blog"
+  name: Batman808026
+  email: your.email@example.com  # Optional
+  url: https://github.com/Batman808026
 
-baseurl: /
+owner: Batman808026
+year: 2025
 
-source: .
-destination: ./_site
-permalink: /:title
-paginate: 3
-paginate_path: /page/:num/
+# Optional: Analytics
+google_analytics: G-XXXXXXXXXX  # Get free at analytics.google.com
 
-defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-
-future: true
+# Plugins (already included)
 plugins:
-  - jekyll-seo-tag
   - jekyll-paginate
   - jekyll-sitemap
-
-# Custom variables
-owner : "SomeHacker"
-year : "2020"
+  - jekyll-seo-tag
+  - jekyll-feed
